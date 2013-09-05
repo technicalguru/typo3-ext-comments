@@ -1,0 +1,37 @@
+<!-- ###VIEW_COMMENTS### begin -->
+<a name="comments"></a>
+<h2>###COMMENT_COUNT###</h2>
+<!-- ###COMMENTS### begin -->
+	<a name="comment-###UID###"></a>
+	<div class="tx-rscomments-comment">
+		<span class="tx-rscomments-comment-name">###INDEX###. ###NAME###</span>, <span class="tx-rscomments-comment-date">###CRDATE###</span>:
+		<hr />
+		<div class="tx-rscomments-comment-content">
+			###CONTENT###
+		</div>
+	</div>
+<!-- ###COMMENTS### end -->
+
+<!-- ###WRITE_COMMENTS### begin -->
+	<div class="tx-rscomments-form">
+		<h2>###L_WRITE_COMMENT###</h2>
+		<form action="###PAGEURI###" method="POST">
+			###TSFE_ID###
+			###PREFIX_UID###
+			###ORIGINAL_URL###
+			<table>
+				<tr>
+					<td class="tx_rscomments_form_label">###L_NAME###</td>
+					<td class="tx_rscomments_form_input">###NAME###</td>
+				</tr>
+				<tr>
+					<td class="tx_rscomments_form_label">###L_CONTENT###</td>
+					<td class="tx_rscomments_form_input">###CONTENT###</td>
+				</tr>
+			</table>
+			###SUBMIT###
+		</form>
+	</div>
+<!-- ###WRITE_COMMENTS### end -->
+
+<!-- ###VIEW_COMMENTS### end -->

@@ -1,0 +1,31 @@
+.tx-rscomments-comment {
+	border: 1px solid #d0d0d0; 
+	padding: 5px 10px;
+	margin-top: 3px;
+}
+
+.tx-rscomments-comment-name { font-weight: bold; }
+.tx-rscomments-comment-date { font-weight: bold; }
+.tx-rscomments-comment-content { padding: 3px 0; text-align: justify; }
+
+.tx-rscomments-closed { border: 1px solid #d0d0d0; padding: 10px 10px; margin: 10px 0; }
+.tx-rscomments-closed IMG { vertical-align: baseline; margin-left: 4px; padding-right: 4px; }
+
+.tx-rscomments-form {
+	margin-top: 15px;
+}
+
+.tx-rscomments-form-label {
+	font-weight: bold;
+	vertical-align: top;
+}
+
+.tx-rscomments-form-input {
+	vertical-align: top;
+	padding-left: 10px;
+}
+
+.tx-rscomments-form-input textarea,
+.tx-rscomments-form-input input {
+	background-color: #eee;
+}

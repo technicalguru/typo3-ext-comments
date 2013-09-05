@@ -1,0 +1,96 @@
+plugin.tx_rscomments < plugin.tx_rsextbase
+plugin.tx_rscomments {
+	config {
+		storagePid = {$plugin.tx_rscomments.storagePid}
+		preFillFormFromFeUser = {$plugin.tx_rscomments.preFillFormFromFeUser}
+		autoConvertLinks = {$plugin.tx_rscomments.autoConvertLinks}
+		requireApproval = {$plugin.tx_rscomments.requireApproval}
+	}
+	
+	default {
+	}
+}
+
+plugin.tx_rscomments_pi1 {
+	config < plugin.tx_rscomments.config
+	default < plugin.tx_rscomments.default
+	
+	config {
+		# Comments can be automatically closed after X days
+		closeCommentsAfter = 0
+
+		prefixToTableMap {
+			tx_album3x_pi1 = tx_album3x_images
+			tx_commerce_pi1 = tx_commerce_products
+			tx_irfaq_pi1 = tx_irfaq_q
+			tx_mininews_pi1 = tx_mininews_news
+			tx_ttnews = tt_news
+		}
+		
+		# some extensions may use url parameter other than showUid or uid to show single record. Mapping here shows table to parameter mapping
+		showUidMap {
+			tx_ttnews = tt_news
+		}
+		
+		# fallback on global UID param is allowed (in case no uid was delivered)
+		uidFallbackEnabled = 1
+		
+		emailTemplate = EXT:rscomments/pi1/email.tmpl
+		
+		# No prefix means that comments are related to page id
+		externalPrefix =
+	}
+	
+	list {
+		comment_count = CASE
+		comment_count {
+			key.field = comment_count
+			default = COA
+			default {
+				10 = TEXT
+				10.field = comment_count
+				20 = TEXT
+				20.value = &nbsp;comments
+				20.lang.de = &nbsp;Kommentare
+			}
+			0 = TEXT
+			0 {
+				value = No comments
+				lang.de = Keine Kommentare
+			}
+			1 = TEXT
+			1 {
+				value = 1 comment
+				lang.de = 1 Kommentar
+			}
+		}
+	}
+	
+	comment {
+		type {
+			crdate = datetime
+		}
+		
+		name = CASE
+		name {
+			key.field = feuser
+			0 < plugin.tx_rscomments.default.plain
+			default < plugin.tx_rscomments.default.userlink
+			default.typolink.additionalParams.field = feuser
+		}
+		
+	}
+	
+	form {
+		type {
+			name = form_input
+			content = form_text
+			submit = form_submit
+			prefix_uid = form_hidden
+			tsfe_id = tsfe_id
+			original_url = form_hidden
+		}
+	}
+}
+
+page.includeCSS.rscomments = EXT:rscomments/res/rscomments.css
