@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'jrt'</description>
+	</meta>
+	<data type="array">
+	<languageKey index="default" type="array">
+		<label index="tx_rscomments_comments">Comments</label>
+		<label index="tx_rsscomments_comments.external_ref">Comment for the record:</label>
+		<label index="tx_rscomments_comments.external_prefix">External prefix for this comment:</label>
+		<label index="tx_rscomments_comments.approved">Approval state:</label>
+		<label index="tx_rscomments_comments.approved.I.0"></label>
+		<label index="tx_rscomments_comments.name">Commenter's name:</label>
+		<label index="tx_rscomments_comments.email">Commenter's e-mail:</label>
+		<label index="tx_rscomments_comments.homepage">Commenter's web site:</label>
+		<label index="tx_rscomments_comments.location">Commenter's location:</label>
+		<label index="tx_rscomments_comments.content">Comment:</label>
+		<label index="tx_rscomments_comments.remote_addr">Commenter's IP address:</label>
+		<label index="tx_rscomments_comments.double_post_check">Code for double post checks:</label>
+		<label index="tx_rscomments_comments.external_ref.wizard">Go to this record</label>
+		<label index="tx_rscomments_comments.feuser">FE User record</label>
+		<label index="tx_rscomments_urllog">URL Log for Comments</label>
+		<label index="tx_rscomments_urllog.url">URL:</label>
+	</languageKey>
+		<languageKey index="de" type="array">
+		<label index="tx_rscomments_comments">Kommentare</label>
+		<label index="tx_rsscomments_comments.external_ref">Kommentar fuer den Eintrag:</label>
+		<label index="tx_rscomments_comments.external_prefix">Externer Prefix fuer diesen Kommentar:</label>
+		<label index="tx_rscomments_comments.approved">Approval Status:</label>
+		<label index="tx_rscomments_comments.approved.I.0"></label>
+		<label index="tx_rscomments_comments.name">Name des Autors:</label>
+		<label index="tx_rscomments_comments.email">Email des Autors:</label>
+		<label index="tx_rscomments_comments.homepage">Webseite des Autors:</label>
+		<label index="tx_rscomments_comments.location">Ort des Autors:</label>
+		<label index="tx_rscomments_comments.content">Kommentar:</label>
+		<label index="tx_rscomments_comments.remote_addr">IP Adresse des Autors:</label>
+		<label index="tx_rscomments_comments.double_post_check">Code fuer double post checks:</label>
+		<label index="tx_rscomments_comments.external_ref.wizard">Go to this record</label>
+		<label index="tx_rscomments_comments.feuser">FE User Eintrag</label>
+		<label index="tx_rscomments_urllog">URL Eintrag des Kommentars</label>
+		<label index="tx_rscomments_urllog.url">URL:</label>
+		</languageKey>
+	</data>
+</T3locallang>

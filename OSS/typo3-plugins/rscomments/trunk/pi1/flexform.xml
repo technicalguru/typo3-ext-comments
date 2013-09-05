@@ -1,0 +1,52 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:rscomments/locallang.xml:flexform.general.title</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<mode>
+						<TCEforms>
+							<label>LLL:EXT:rscomments/pi1/locallang.xml:flexform.mode</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:rscomments/pi1/locallang.xml:flexform.mode.0</numIndex>
+										<numIndex index="1">DEFAULT</numIndex>
+									</numIndex>
+               					</items>
+							</config>
+						</TCEforms>
+					</mode>
+
+					<externalPrefix>
+						<TCEforms>
+							<label>LLL:EXT:rscomments/pi1/locallang.xml:flexform.externalPrefix</label>
+							<config>
+								<type>input</type>
+								<size>25</size>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</externalPrefix>
+					
+					<uidFallbackEnabled>
+						<TCEforms>
+							<label>LLL:EXT:rscomments/pi1/locallang.xml:flexform.uidFallbackEnabled</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</uidFallbackEnabled>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>
