@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin tx_rscomments_pi1</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<!-- Plugin -->
+			<label index="tt_content.list_type">RSComments PI01: Comments</label>
+			
+			<!-- Flexforms -->
+			<label index="flexform.mode">Mode</label>
+			<label index="flexform.mode.0">Comments and Form</label>
+			<label index="flexform.externalPrefix">External Prefix</label>
+			<label index="flexform.uidFallbackEnabled">Fallback to global UID parameter enabled?</label>
+
+			<!-- Plugin -->			
+			<label index="form_l_write_comment">Write a comment:</label>
+			<label index="form_l_name">Your name:</label>
+			<label index="form_l_content">Your comment:</label>
+			
+		</languageKey>
+		
+		<languageKey index="de" type="array">
+			<!-- Plugin -->			
+			<label index="form_l_write_comment">Einen Kommentar hinterlassen:</label>
+			<label index="form_l_name">Dein Name:</label>
+			<label index="form_l_content">Dein Kommentar:</label>
+		</languageKey>
+	</data>
+</T3locallang>

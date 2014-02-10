@@ -1,0 +1,15 @@
+plugin.tx_rscomments {
+
+	# cat=plugin.comments: Basic; type=string; label=Storage PID:The PID where comments are stored or a comma-separated list of PIDs (see manual!)
+	storagePid =
+
+	# cat=plugin.comments: Advanced; type=boolean; label=Use FE user data:Check this option if you want to prefill comment form with data from authenticated FE user. Only empty values of the form will be set.
+	preFillFormFromFeUser = 1
+
+	# cat=plugin.comments: Advanced; type=boolean; label=Create links in comments:If enabled, will search comment text for links (using "http://" or "www." as trigger) and create HTML links automatically.
+	autoConvertLinks = 1
+
+	# cat=plugin.comments: Spam protection; type=boolean; label=Require approval:Comments must be approved by moderator before showing them to other users
+	requireApproval = 0
+	
+}
